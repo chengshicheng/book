@@ -237,7 +237,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>[TOC]</p>
+                                <ul>
+<li><a href="#----">&#x5B58;&#x50A8;&#x7ED3;&#x6784;</a></li>
+<li><a href="#------">&#x7D22;&#x5F15;&#x4F7F;&#x7528;&#x539F;&#x5219;</a></li>
+<li><a href="#----acid">&#x4E8B;&#x52A1;&#x7279;&#x6027;ACID</a></li>
+<li><a href="#---------------">&#x810F;&#x8BFB;/&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x8BFB;/&#x5E7B;&#x8BFB; &#x7684;&#x6982;&#x5FF5;</a></li>
+<li><a href="#-----isolation-level-">&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF08;isolation_level&#xFF09;</a></li>
+<li><a href="#-------">&#x5F53;&#x524D;&#x8BFB;&#x4E0E;&#x5FEB;&#x7167;&#x8BFB;</a></li>
+<li><a href="#mvcc-----">MVCC&#x591A;&#x7248;&#x672C;&#x63A7;&#x5236;</a></li>
+<li><a href="#log">Log</a><ul>
+<li><a href="#redolog">redolog</a></li>
+<li><a href="#binlog">binlog</a></li>
+<li><a href="#undolog">undolog</a></li>
+</ul>
+</li>
+<li><a href="#-">&#x9501;</a></li>
+</ul>
 <h4 id="&#x5B58;&#x50A8;&#x7ED3;&#x6784;">&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h4>
 <pre><code>1. hash&#x3002;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x7CBE;&#x786E;&#x67E5;&#x8BE2;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x8303;&#x56F4;&#x67E5;&#x8BE2;&#xFF0C;&#x9002;&#x5408;kv&#x7ED3;&#x6784;&#xFF1B;
 2. &#x6709;&#x5E8F;&#x6570;&#x7EC4;&#x3002;&#x589E;&#x5220;&#x6570;&#x636E;&#x6210;&#x672C;&#x5F88;&#x9AD8;&#xFF0C;&#x9002;&#x5408;&#x5B58;&#x653E;&#x9759;&#x6001;&#x6570;&#x636E;&#xFF1B;
@@ -385,7 +400,7 @@ D    &#x6301;&#x7EED;&#x6027;(Durability)&#x3002;&#x4E8B;&#x52A1;&#x4E00;&#x65E6
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"理论","level":"1.3.1.1","depth":3,"next":{"title":"面试题","level":"1.3.1.2","depth":3,"path":"sql/mysql/2.md","ref":"sql/mysql/2.md","articles":[]},"previous":{"title":"MySQL","level":"1.3.1","depth":2,"path":"sql/mysql/README.md","ref":"sql/mysql/README.md","articles":[{"title":"理论","level":"1.3.1.1","depth":3,"path":"sql/mysql/1.md","ref":"sql/mysql/1.md","articles":[]},{"title":"面试题","level":"1.3.1.2","depth":3,"path":"sql/mysql/2.md","ref":"sql/mysql/2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sql/mysql/1.md","mtime":"2020-07-19T04:26:59.378Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-19T16:13:22.735Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"理论","level":"1.3.1.1","depth":3,"next":{"title":"面试题","level":"1.3.1.2","depth":3,"path":"sql/mysql/2.md","ref":"sql/mysql/2.md","articles":[]},"previous":{"title":"MySQL","level":"1.3.1","depth":2,"path":"sql/mysql/README.md","ref":"sql/mysql/README.md","articles":[{"title":"理论","level":"1.3.1.1","depth":3,"path":"sql/mysql/1.md","ref":"sql/mysql/1.md","articles":[]},{"title":"面试题","level":"1.3.1.2","depth":3,"path":"sql/mysql/2.md","ref":"sql/mysql/2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sql/mysql/1.md","mtime":"2020-07-20T12:17:10.801Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-20T12:25:44.200Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
